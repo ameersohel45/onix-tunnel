@@ -125,6 +125,7 @@ services:
     environment:
       - NODE_ENV=production
       - PORT=3002
+      - BPP_CALLBACK_ENDPOINT=http://onix-bpp:8082/bpp/caller
     ports:
       - "3002:3002"
     healthcheck:

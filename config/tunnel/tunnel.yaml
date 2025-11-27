@@ -21,22 +21,13 @@ modules:
     path: /tunnel/forward/
     handler:
       type: std
-      role: bap
+      role: bpp
       httpClientConfig:
         maxIdleConns: 1000
         maxIdleConnsPerHost: 200
         idleConnTimeout: 300s
         responseHeaderTimeout: 5s
       plugins:
-        registry:
-          id: dediregistry
-          config:
-            url: http://34.14.173.68:8080/dedi
-            registryName: subscribers.beckn.one
-            timeout: 10
-            retry_max: 3
-            retry_wait_min: 1s
-            retry_wait_max: 5s
         router:
           id: router
           config:
@@ -55,15 +46,6 @@ modules:
         idleConnTimeout: 300s
         responseHeaderTimeout: 5s
       plugins:
-        registry:
-          id: dediregistry
-          config:
-            url: http://34.14.173.68:8080/dedi
-            registryName: subscribers.beckn.one
-            timeout: 10
-            retry_max: 3
-            retry_wait_min: 1s
-            retry_wait_max: 5s
         router:
           id: router
           config:

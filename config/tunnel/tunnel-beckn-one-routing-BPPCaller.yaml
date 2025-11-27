@@ -1,9 +1,7 @@
 routingRules:
   - domain: "beckn.one:deg:ev-charging:2.0.0"
     version: "2.0.0"
-    targetType: "url"
-    target:
-      url: "http://tunnel:8083/tunnel/callback/"
+    targetType: "bap"
     endpoints:
       - on_discover
       - on_select
