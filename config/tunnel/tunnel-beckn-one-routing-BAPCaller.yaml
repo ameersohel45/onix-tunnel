@@ -1,0 +1,17 @@
+routingRules:
+  - domain: "beckn.one:deg:ev-charging:2.0.0"
+    version: "2.0.0"
+    targetType: "url"
+    target:
+      url: "http://tunnel:8083/tunnel/forward/"
+    endpoints:
+      - select
+      - init
+      - confirm
+      - status
+      - track
+      - cancel
+      - update
+      - rating
+      - support
+      - discover

@@ -1,0 +1,17 @@
+routingRules:
+  - domain: "beckn.one:deg:ev-charging:2.0.0"
+    version: "2.0.0"
+    targetType: "bap"
+    # target:
+    #   url: "http://onix-bap:8081/bap/receiver/"
+    endpoints:
+      - on_discover
+      - on_select
+      - on_init
+      - on_confirm
+      - on_status
+      - on_track
+      - on_cancel
+      - on_update
+      - on_rating
+      - on_support
